@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vẽ 2 hình tam giác</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      canvas.width = 900;
+      canvas.height = 600;
+      canvas.style.border = "2px solid";
+      const ctx = canvas.getContext("2d");
+
+      ctx.beginPath();
+      ctx.moveTo(250, 100);
+      ctx.lineTo(580, 100);
+      ctx.lineTo(250, 430);
+      ctx.lineTo(250, 100);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(650, 500);
+      ctx.lineTo(650, 170);
+      ctx.lineTo(320, 500);
+      ctx.lineTo(650, 500);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
